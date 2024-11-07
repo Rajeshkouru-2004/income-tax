@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Income=prompt("enter the Amount")
+let Tax_percent,Income_tax
+
+if (Income<=250000){
+    console.log(`Your Have No Tax`)
+}
+else if (250000< Income <= 500000 ){
+    Tax_percent=5/100
+    Income_tax=Income*Tax_percent
+    console.log(`Your Tax Amount is ${Income_tax}Rs`)
+}
+else {
+    if (500000< Income <=1000000){
+        Tax_percent=20/100
+         Income_tax=(Income*Tax_percent)+12500
+         console.log(`Your Tax Amount is ${Income_tax}Rs`)
+    }
+    else {
+        Tax_percent=30/100
+        Income_tax=(Income*Tax_percent)+112500
+        console.log(`Your Tax Amount is ${Income_tax}Rs`)
+
+    }
+}
+    </script>
+    
+</body>
+</html>
